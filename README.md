@@ -58,7 +58,7 @@ The main window of the PSL Management System provides access to six different ma
 ## Technology Stack
 
 - **Frontend**: JavaFX
-- **Backend**: MySQL
+- **Backend Database**: MySQL
 
 ## Running the Application
 
