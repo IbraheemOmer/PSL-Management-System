@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopfinalproject.WindowController">
+   <top>
+      <Pane prefHeight="105.0" prefWidth="700.0" style="-fx-background-color: #002901;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="129.0" layoutX="83.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/PSL-Logo.png" />
+               </image>
+            </ImageView>
+            <Text fill="#fdfafa" fontSmoothingType="LCD" layoutX="214.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGEMENT SYSTEM" textAlignment="JUSTIFY">
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane hgap="15.0" layoutX="150.0" layoutY="98.0" prefHeight="200.0" prefWidth="400.0" vgap="15.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="btnTeams" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onMouseClicked="#handleButtonClicks" prefHeight="92.0" prefWidth="190.0" style="-fx-background-radius: 5;" text="Teams">
+                     <graphic>
+                        <ImageView fitHeight="57.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/Teams.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnPlayers" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onMouseClicked="#handleButtonClicks" prefHeight="92.0" prefWidth="190.0" style="-fx-background-radius: 5;" text="Players" GridPane.columnIndex="1">
+                     <graphic>
+                        <ImageView fitHeight="57.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/Players.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnTitles" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onMouseClicked="#handleButtonClicks" prefHeight="92.0" prefWidth="190.0" style="-fx-background-radius: 5;" text="Titles" GridPane.columnIndex="2">
+                     <graphic>
+                        <ImageView fitHeight="56.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/Titles.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnSponsors" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onMouseClicked="#handleButtonClicks" prefHeight="92.0" prefWidth="190.0" style="-fx-background-radius: 5;" text="Sponsors" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <graphic>
+                        <ImageView fitHeight="62.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/Sponsors.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnPoints" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onMouseClicked="#handleButtonClicks" prefHeight="92.0" prefWidth="190.0" style="-fx-background-radius: 5;" text="Points" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/Points.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnFixtures" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onMouseClicked="#handleButtonClicks" prefHeight="92.0" prefWidth="190.0" style="-fx-background-radius: 5;" text="Fixtures" GridPane.rowIndex="1">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/Fixtures.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
